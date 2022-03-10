@@ -8,6 +8,12 @@
 body{
     font-family: 'Roboto', sans-serif;
 }
+#logo{
+    color: var(--green-color);
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+}
 .navbar{
     background-color: var(--dark-color);
 }
@@ -29,6 +35,10 @@ body{
     color: white;
 
 }
+.navbar .container .navbar-toggler:hover{
+    color: var(--green-color);
+    border-color: var(--green-color);
+}
 
 .navbar-toggler:focus{
     box-shadow: none;
@@ -41,15 +51,12 @@ body{
 .navbar .btn:focus,
 .landing .btn:focus{
     box-shadow: none;
+    color: var(--dark-color);
+    background-color: var(--green-color);
 }
 .landing{
     min-height:calc(100vh - 72px);
     background-color: var(--dark-color);
-}
-.landing .btn{
-    color: var(--yellow-color);
-    background: var(--red-color);
-    border: none;
 }
 .features .container .main-title{
     margin-bottom: 300px;
@@ -151,11 +158,104 @@ transform: translateX(0);
 .our-work .container .main-title{
     margin-bottom: 100px;
 }
-.our-work .my-btn{
+.my-btn{
     color: var(--yellow-color);
     background-color: var(--red-color);
     border: none;
+    transition: 0.3s ease;
+    text-decoration: none;
 }
-.our-work .my-btn:focus{
+.my-btn:focus{
 box-shadow: none;
+color: var(--dark-color);
+background-color: var(--green-color);
+}
+.my-btn:hover{
+    color: var(--dark-color);
+    background-color: var(--green-color);
+}
+.under-line{
+    margin-top: 40px;
+    margin-bottom: 30px;
+    max-width: 500px;
+}
+.meet-team .container .main-title{
+    margin-bottom: 100px;
+}
+.meet-team .main-text{
+    color: var(--yellow-color);
+
+}
+
+.meet-team .content .text{
+    color: var(--section-color);
+    background-color: var(--green-color);
+    padding: 3px;
+    width: 100%;
+    top: -30px;
+    font-size: 20px;
+}
+.project {
+    background-color: var(--dark-color);
+}
+.row>* {
+    padding-left: 0;
+    padding-right: 0;
+}
+.subscribe{
+    background-color: var(--yellow-color);
+}
+.emailMe{
+    border: none;
+    background: rgba(0, 0, 0, 0);
+    border-bottom: var(--section-color) solid 1px;
+    padding-left: 5px;
+    color: var(--section-color);
+}
+.emailMe::placeholder{
+    color: var(--section-color);
+}
+.emailMe:focus{
+   outline: none;
+   font-weight: 500;
+   
+}
+.my-btn2{
+    color: var(--yellow-color);
+    background-color: var(--dark-color);
+    margin: 0 0 10px 33px;
+    font-weight: 600;
+}
+.my-btn2:hover{
+    color: var(--section-color);
+}
+.footer{
+    background-color: var(--dark-color);
+}
+.span1{
+    color: var(--green-color);
+
+}
+.span2{
+    color: var(--yellow-color);
+}
+.content-links p a{
+    text-decoration: none;
+}
+.my-btn3{
+    color: var(--yellow-color);
+    background-color: var(--red-color);
+    border: none;
+    padding: 5px 20px;
+    transition: 0.3s ease;
+    text-decoration: none;
+}
+.my-btn3:focus{
+box-shadow: none;
+color: var(--dark-color);
+background-color: var(--red-color);
+}
+.my-btn3:hover{
+    color: var(--dark-color);
+    background-color: var(--red-color);
 }
